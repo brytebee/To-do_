@@ -29,14 +29,18 @@ li {
   flex-wrap: wrap;
 }
 
-.addList {
+.child-flex-large {
   flex: 9;
 }
 
-.addBtn {
+.child-flex-small {
   flex: 1;
 }
 
 .hidden {
   display: none;
+}
+
+.b-border {
+  border-bottom: 1px solid #9c8080;
 }
