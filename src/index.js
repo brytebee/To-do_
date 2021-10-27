@@ -21,6 +21,12 @@ const lists = [
   },
 ].sort((a, b) => a.index - b.index);
 
+if (!JSON.parse(localStorage.getItem('to-do'))) {
+  localStorage.setItem('to-do', JSON.stringify(lists));
+}
+
+let storageList = JSON.parse(localStorage.getItem('to-do'));
+
 const populateRoot = (array) => {
   array.forEach((item) => {
     const ul = document.createElement('ul');
@@ -35,7 +41,11 @@ const populateRoot = (array) => {
     const check = document.createElement('input');
     check.type = 'checkbox';
     check.className = 'check';
-    check.addEventListener('change', (e) => stateChange(e, item));
+    check.addEventListener('change', (e) => stateChange(e, item, array));
+
+    if (item.completed) {
+      check.checked = true;
+    }
 
     const descriptionSpan = document.createElement('span');
     descriptionSpan.className = 'description';
@@ -62,22 +72,9 @@ const populateRoot = (array) => {
     listDiv.append(descriptionDiv, iconsDiv);
 
     li.appendChild(listDiv);
-
-    // li.innerHTML = `
-    //   <div class="list d-flex parent-flex b-border">
-    //     <div class="child-flex-large">
-    //       <input type="checkbox" name="check" class="check">
-    //       <span class="description">${item.description}</span>
-    //     </div>
-    //     <div class="child-flex-small">
-    //       <span class="options"><i class="fas fa-ellipsis-v"></i></span>
-    //       <span class="trash hidden"><i class="fa fa-trash" aria-hidden="true"></i></span>
-    //       <span class="done hidden"><i class="fas fa-check"></i></span>
-    //     </div>
-    //   </div>`;
     ul.append(li);
     root.append(ul);
   });
 };
 
-populateRoot(lists);
+populateRoot(storageList);
