@@ -2,3 +2,16 @@ body {
   color: red;
   background-color: rgb(171, 199, 190);
 }
+
+li {
+  list-style: none;
+}
+
+.card {
+  margin: 10% 30%;
+  background-color: blanchedalmond;
+}
+
+.hidden {
+  display: none;
+}

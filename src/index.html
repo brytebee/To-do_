@@ -5,11 +5,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Development</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
-  <div id="root"></div>
-  <h1>Heloo Worlds</h1>
+  <div class="card">
+    <h1>Today's To Do<i class="fas fa-check"></i></h1>
+    <input type="text" name="addItem" class="addList" placeholder="Add to your list...">
+    <div id="root"></div>
+    <button class="clear">Clear All Completed</button>
+  </div>
   <script src="./src/index.js"></script>
 </body>
 
