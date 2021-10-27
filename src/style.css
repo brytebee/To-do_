@@ -24,6 +24,7 @@ li {
 .d-flex {
   display: flex;
 }
+
 .parent-flex {
   flex-wrap: wrap;
 }
