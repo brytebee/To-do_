@@ -3,6 +3,10 @@ body {
   background-color: rgb(171, 199, 190);
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 li {
   list-style: none;
 }
