@@ -6,9 +6,9 @@
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/27709832/131328615-c1d396fa-cf55-414b-bf5a-d9f814dece7a.png)
+![image](https://user-images.githubusercontent.com/27709832/139083214-c5e2cc85-3837-42dc-b4d8-0d82d2384fec.png)
 
-[live-demo](https://brytebee.github.io/toDo/dist/)
+<!-- [live-demo](https://brytebee.github.io/toDo/dist/) -->
 
 ## Built With
 
