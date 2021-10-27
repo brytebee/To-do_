@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/27709832/139083214-c5e2cc85-3837-42dc-b4d8-0d82d2384fec.png)
+![image](https://user-images.githubusercontent.com/27709832/139115947-8c70a4d2-d28e-47d9-8619-3932f5f455fb.png)
 
 <!-- [live-demo](https://brytebee.github.io/toDo/dist/) -->
 
