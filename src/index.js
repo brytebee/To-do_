@@ -25,7 +25,7 @@ if (!JSON.parse(localStorage.getItem('to-do'))) {
   localStorage.setItem('to-do', JSON.stringify(lists));
 }
 
-let storageList = JSON.parse(localStorage.getItem('to-do'));
+const storageList = JSON.parse(localStorage.getItem('to-do'));
 
 const populateRoot = (array) => {
   array.forEach((item) => {
