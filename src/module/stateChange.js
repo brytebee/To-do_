@@ -1,8 +1,6 @@
-const stateChange = (e, index, state) => {
+const stateChange = (e, list) => {
   if (e.target.checked) {
-    state = true;
-  } else {
-    state = false;
+    list.completed = true;
   }
 };
 

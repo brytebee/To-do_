@@ -35,7 +35,7 @@ const populateRoot = (array) => {
     const check = document.createElement('input');
     check.type = 'checkbox';
     check.className = 'check';
-    check.addEventListener('change', (e) => stateChange(e, item.index, item.completed));
+    check.addEventListener('change', (e) => stateChange(e, item));
 
     const descriptionSpan = document.createElement('span');
     descriptionSpan.className = 'description';
