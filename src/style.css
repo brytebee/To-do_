@@ -9,7 +9,31 @@ li {
 
 .card {
   margin: 10% 30%;
-  background-color: blanchedalmond;
+  background-color: rgb(219, 214, 207);
+  box-shadow: 10px 5px 8px #9c8080;
+}
+
+.max-width {
+  width: 100%;
+}
+
+.double-line-height {
+  line-height: 2;
+}
+
+.d-flex {
+  display: flex;
+}
+.parent-flex {
+  flex-wrap: wrap;
+}
+
+.addList {
+  flex: 9;
+}
+
+.addBtn {
+  flex: 1;
 }
 
 .hidden {

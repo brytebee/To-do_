@@ -12,9 +12,12 @@
 <body>
   <div class="card">
     <h1>Today's To Do<i class="fas fa-check"></i></h1>
-    <input type="text" name="addItem" class="addList" placeholder="Add to your list...">
+    <span class="addSpan d-flex parent-flex">
+      <input type="text" name="addItem" class="addList double-line-height" placeholder="Add to your list...">
+      <button class="addBtn"><i class="fas fa-level-down-alt fa-rotate-90"></i></button>
+    </span>
     <div id="root"></div>
-    <button class="clear">Clear All Completed</button>
+    <button class="clear max-width double-line-height">Clear All Completed</button>
   </div>
   <script src="./src/index.js"></script>
 </body>
