@@ -1,5 +1,5 @@
+import clearAll from './module/clearAll.js';
 import { add } from './module/crud.js';
-import { clearAll } from './module/delete.js';
 import display from './module/display.js';
 import getFromStorage from './module/storage.js';
 import './style.css';
@@ -19,4 +19,6 @@ if (!JSON.parse(localStorage.getItem('to-do'))) {
 
 const storageList = JSON.parse(localStorage.getItem('list'));
 
-display(storageList);
+if (storageList) {
+  display(storageList);
+};

@@ -42,7 +42,7 @@ const display = (array) => {
 
     descriptionSpan.addEventListener('keyup', () => editItem(array, item, descriptionSpan));
 
-    trashSpan.addEventListener('click', () => removeItem(array, item, display))
+    trashSpan.addEventListener('click', () => removeItem(array, item, display));
 
     check.addEventListener('change', (e) => {
       stateChange(e, item, array);
