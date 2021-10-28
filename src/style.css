@@ -48,3 +48,7 @@ li {
 .b-border {
   border-bottom: 1px solid #9c8080;
 }
+
+.strike-out {
+  text-decoration: line-through;
+}

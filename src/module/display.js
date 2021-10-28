@@ -17,10 +17,11 @@ const display = (array) => {
     const check = document.createElement('input');
     check.type = 'checkbox';
     check.className = 'check';
-    check.addEventListener('change', (e) => stateChange(e, item, array));
+    check.addEventListener('change', (e) => stateChange(e, item, li, array));
 
     if (item.completed) {
       check.checked = true;
+      li.classList.add('strike-out');
     }
 
     const descriptionSpan = document.createElement('span');
