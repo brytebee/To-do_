@@ -18,6 +18,6 @@ const visualChange = (e, list, optionIcon, taskCompleteIcon, lists) => {
     taskCompleteIcon.classList.add('hidden');
   }
   localStorage.setItem('list', JSON.stringify(lists));
-}
+};
 
-export  { stateChange, visualChange };
+export { stateChange, visualChange };
