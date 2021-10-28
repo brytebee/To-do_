@@ -1,3 +1,4 @@
+import removeItem from './delete.js';
 import editItem from './edit.js';
 import { stateChange, visualChange } from './stateChange.js';
 
@@ -41,9 +42,11 @@ const display = (array) => {
 
     descriptionSpan.addEventListener('keyup', () => editItem(array, item, descriptionSpan));
 
+    trashSpan.addEventListener('click', () => removeItem(array, item, display))
+
     check.addEventListener('change', (e) => {
       stateChange(e, item, array);
-      visualChange(e, li, optionsSpan, taskCompleteSpan, array);
+      visualChange(e, li, optionsSpan, taskCompleteSpan, trashSpan, array);
     });
 
     if (item.completed) {
@@ -52,7 +55,7 @@ const display = (array) => {
     }
 
     descriptionDiv.append(check, descriptionSpan);
-    iconsDiv.append(optionsSpan, trashSpan, taskCompleteSpan);
+    iconsDiv.append(optionsSpan, taskCompleteSpan, trashSpan);
 
     listDiv.append(descriptionDiv, iconsDiv);
 
