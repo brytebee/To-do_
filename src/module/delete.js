@@ -1,4 +1,4 @@
-import { indexUpdate } from './crud.js';
+import { indexUpdate } from './updateIndex.js';
 import getFromStorage, { saveInStorage } from './storage.js';
 
 const removeItem = (list, task, display) => {

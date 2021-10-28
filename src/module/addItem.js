@@ -1,5 +1,6 @@
 import display from './display.js';
-import getFromStorage, { saveInStorage } from './storage.js';
+import getFromStorage from './storage.js';
+import { indexUpdate } from './updateIndex.js';
 
 class List {
   constructor(description, list) {
@@ -9,16 +10,6 @@ class List {
     this.id = `id${this.index}`;
   }
 }
-
-const indexUpdate = (list) => {
-  let counter = 1;
-  list.forEach((task) => {
-    task.index = counter;
-    counter += 1;
-  });
-  saveInStorage(list);
-  return list;
-};
 
 const add = () => {
   if (document.querySelector('.addList').value !== '') {
@@ -32,5 +23,3 @@ const add = () => {
     document.querySelector('.addList').value = '';
   }
 };
-
-export { add, indexUpdate };
