@@ -1,5 +1,5 @@
+import add from './module/addItem.js';
 import clearAll from './module/clearAll.js';
-import { add } from './module/updateIndex.js';
 import display from './module/display.js';
 import getFromStorage from './module/storage.js';
 import './style.css';

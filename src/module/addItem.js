@@ -1,6 +1,6 @@
 import display from './display.js';
-import getFromStorage from './storage.js';
-import { indexUpdate } from './updateIndex.js';
+import getFromStorage, { saveInStorage } from './storage.js';
+import indexUpdate from './updateIndex.js';
 
 class List {
   constructor(description, list) {
@@ -23,3 +23,5 @@ const add = () => {
     document.querySelector('.addList').value = '';
   }
 };
+
+export default add;
