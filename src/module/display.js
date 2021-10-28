@@ -26,19 +26,21 @@ const display = (array) => {
     descriptionSpan.textContent = item.description;
 
     const iconsDiv = document.createElement('div');
-    iconsDiv.className = 'child-flex-small';
+    iconsDiv.className = 'd-flex child-flex-small';
 
     const optionsSpan = document.createElement('span');
     optionsSpan.className = 'options';
     optionsSpan.innerHTML = '<i class="fas fa-ellipsis-v"></i>';
 
     const trashSpan = document.createElement('span');
-    trashSpan.className = 'trash hidden';
+    trashSpan.className = 'trash hidden child-flex-small danger';
     trashSpan.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
 
     const taskCompleteSpan = document.createElement('span');
-    taskCompleteSpan.className = 'done hidden';
+    taskCompleteSpan.className = 'done hidden child-flex-small success';
     taskCompleteSpan.innerHTML = '<i class="fas fa-check"></i>';
+
+    optionsSpan.addEventListener('click', (e) => visualChange(e, li, optionsSpan, taskCompleteSpan, trashSpan, array));
 
     descriptionSpan.addEventListener('keyup', () => editItem(array, item, descriptionSpan));
 
