@@ -1,4 +1,4 @@
-import { editItem } from './edit.js';
+import editItem from './edit.js';
 import { stateChange, visualChange } from './stateChange.js';
 
 const root = document.querySelector('#root');
