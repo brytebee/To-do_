@@ -4,7 +4,7 @@ const stateChange = (e, list, lists) => {
   } else {
     list.completed = false;
   }
-  localStorage.setItem('to-do', JSON.stringify(lists));
+  localStorage.setItem('list', JSON.stringify(lists));
 };
 
 export default stateChange;
