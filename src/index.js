@@ -1,6 +1,5 @@
 import { add } from './module/crud.js';
 import display from './module/display.js';
-import stateChange from './module/stateChange.js';
 import './style.css';
 
 document.querySelector('.addBtn').addEventListener('click', () => {

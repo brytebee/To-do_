@@ -7,8 +7,8 @@ class List {
     this.description = description;
     this.index = list.length + 1;
     this.id = `id${this.index}`;
-  }
-}
+  };
+};
 
 const add = () => {
   if (document.querySelector('.addList').value !== '') {
@@ -18,10 +18,10 @@ const add = () => {
     saveInStorage(list);
     list = getFromStorage();
     list = indexUpdate(list);
-    display(list)
+    display(list);
     document.querySelector('.addList').value = '';
   }
-}
+};
 
 const indexUpdate = (list) => {
   let counter = 1;
@@ -33,4 +33,4 @@ const indexUpdate = (list) => {
   return list;
 };
 
-export { add, indexUpdate};
+export { add, indexUpdate };

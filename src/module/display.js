@@ -1,4 +1,4 @@
-import stateChange from "./stateChange";
+import stateChange from './stateChange.js';
 
 const root = document.querySelector('#root');
 
