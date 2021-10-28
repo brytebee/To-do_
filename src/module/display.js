@@ -1,4 +1,4 @@
-import stateChange from './stateChange.js';
+import { stateChange, visualChange } from './stateChange.js';
 
 const root = document.querySelector('#root');
 
@@ -17,12 +17,6 @@ const display = (array) => {
     const check = document.createElement('input');
     check.type = 'checkbox';
     check.className = 'check';
-    check.addEventListener('change', (e) => stateChange(e, item, li, array));
-
-    if (item.completed) {
-      check.checked = true;
-      li.classList.add('strike-out');
-    }
 
     const descriptionSpan = document.createElement('span');
     descriptionSpan.className = 'description';
@@ -42,6 +36,16 @@ const display = (array) => {
     const taskCompleteSpan = document.createElement('span');
     taskCompleteSpan.className = 'done hidden';
     taskCompleteSpan.innerHTML = '<i class="fas fa-check"></i>';
+
+    check.addEventListener('change', (e) => {
+      stateChange(e, item, array);
+      visualChange(e, li, optionsSpan, taskCompleteSpan, array);
+    });
+
+    if (item.completed) {
+      check.checked = true;
+      li.classList.add('strike-out');
+    }
 
     descriptionDiv.append(check, descriptionSpan);
     iconsDiv.append(optionsSpan, trashSpan, taskCompleteSpan);
