@@ -21,4 +21,4 @@ const storageList = JSON.parse(localStorage.getItem('list'));
 
 if (storageList) {
   display(storageList);
-};
+}
