@@ -33,9 +33,4 @@ const add = () => {
   }
 };
 
-const editItem = (list, task, textHolder) => {
-  task.description = textHolder.textContent;
-  saveInStorage(list);
-};
-
-export { add, indexUpdate, editItem };
+export { add, indexUpdate };
