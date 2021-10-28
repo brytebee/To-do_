@@ -1,3 +1,4 @@
+import { editItem } from './crud.js';
 import { stateChange, visualChange } from './stateChange.js';
 
 const root = document.querySelector('#root');
@@ -19,6 +20,7 @@ const display = (array) => {
     check.className = 'check';
 
     const descriptionSpan = document.createElement('span');
+    descriptionSpan.setAttribute('contenteditable', true);
     descriptionSpan.className = 'description';
     descriptionSpan.textContent = item.description;
 
@@ -36,6 +38,8 @@ const display = (array) => {
     const taskCompleteSpan = document.createElement('span');
     taskCompleteSpan.className = 'done hidden';
     taskCompleteSpan.innerHTML = '<i class="fas fa-check"></i>';
+
+    descriptionSpan.addEventListener('keyup', () => editItem(array, item, descriptionSpan));
 
     check.addEventListener('change', (e) => {
       stateChange(e, item, array);
