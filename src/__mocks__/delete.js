@@ -1,4 +1,4 @@
-const add = () => {
+const removeItem = () => {
   document.body.innerHTML = `
   <span class="addSpan d-flex parent-flex">
       <input type="text" name="addItem" class="addList double-line-height child-flex-large"
@@ -11,10 +11,11 @@ const add = () => {
   input.value = 'one';
   const contentHolder = document.createElement('div');
   contentHolder.textContent = input.value;
-  document.getElementById('root').append(contentHolder);
+  const list = document.getElementById('root');
+  list.append(contentHolder);
+  list.remove(contentHolder);
   const wrapperChildren = Array.from(document.querySelectorAll('#root div'));
-  console.log(wrapperChildren);
   return wrapperChildren;
 }
 
-export default add;
+export default removeItem;

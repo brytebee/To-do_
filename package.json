@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/brytebee/To-do_#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
     "css-loader": "^6.4.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.3.1",
