@@ -8,7 +8,9 @@ In this project, I built a simple HTML list of To Do tasks using JavaScript es6 
 
 ![image](https://user-images.githubusercontent.com/27709832/139261274-f7fb99bd-e591-458e-8a59-1b0addcc7c78.png)
 
-[live-demo](https://brytebee.github.io/to-Do$/dist/)
+## Live Demo
+
+[live-demo](https://brytebee.github.io/To-do_/)
 
 ## Built With
 
@@ -17,9 +19,15 @@ In this project, I built a simple HTML list of To Do tasks using JavaScript es6 
 ## Getting started
 
 1. Clone the project
-2. Installing the packages
+2. Installing the npm packages by running `npm i`
 3. On the cmd run `npm run build`
 4. Run `npm start`
+
+## Running Test
+
+1. Clone the project
+2. Installing the npm packages by running `npm i`
+3. Run `npm run test`
 
 ### Prerequisites
 
