@@ -1,4 +1,4 @@
-import removeItem from '../delete.js';
+import removeItem from './delete.js';
 import editItem from './edit.js';
 import { stateChange, visualChange } from './stateChange.js';
 

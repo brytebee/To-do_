@@ -1,5 +1,5 @@
-import indexUpdate from './module/updateIndex.js';
-import getFromStorage, { saveInStorage } from './module/storage.js';
+import indexUpdate from './updateIndex.js';
+import getFromStorage, { saveInStorage } from './storage.js';
 
 const removeItem = (list, task, display) => {
   list = list.filter((eachTask) => eachTask.index !== task.index);
