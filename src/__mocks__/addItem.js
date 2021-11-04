@@ -5,7 +5,7 @@ const add = () => {
         placeholder="Add to your list...">
       <button class="addBtn child-flex-small bg-success"><i class="fas fa-level-down-alt fa-rotate-90"></i></button>
     </span>
-    <div id="root"></div>`
+    <div id="root"></div>`;
 
   const input = document.querySelector('.addList');
   input.value = 'one';
@@ -14,6 +14,6 @@ const add = () => {
   document.getElementById('root').append(contentHolder);
   const wrapperChildren = Array.from(document.querySelectorAll('#root div'));
   return wrapperChildren;
-}
+};
 
 export default add;

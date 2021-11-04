@@ -1,4 +1,4 @@
-import add from './module/addItem.js';
+import add from './addItem.js';
 import clearAll from './module/clearAll.js';
 import display from './module/display.js';
 import getFromStorage from './module/storage.js';
