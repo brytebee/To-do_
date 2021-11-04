@@ -19,9 +19,15 @@ In this project, I built a simple HTML list of To Do tasks using JavaScript es6 
 ## Getting started
 
 1. Clone the project
-2. Installing the packages
+2. Installing the npm packages by running `npm i`
 3. On the cmd run `npm run build`
 4. Run `npm start`
+
+## Running Test
+
+1. Clone the project
+2. Installing the npm packages by running `npm i`
+3. Run `npm run test`
 
 ### Prerequisites
 
