@@ -1,6 +1,6 @@
 import { saveInStorage } from './storage.js';
 
-const indexUpdate = (list) => {
+const updateIndex = (list) => {
   let counter = 1;
   list.forEach((task) => {
     task.index = counter;
@@ -10,4 +10,4 @@ const indexUpdate = (list) => {
   return list;
 };
 
-export default indexUpdate;
+export default updateIndex;

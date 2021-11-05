@@ -1,7 +1,7 @@
-import add from './module/addItem.js';
-import clearAll from './module/clearAll.js';
-import display from './module/display.js';
-import getFromStorage from './module/storage.js';
+import add from './addItem.js';
+import clearAll from './clearAll.js';
+import display from './display.js';
+import getFromStorage from './storage.js';
 import './style.css';
 
 document.querySelector('.addBtn').addEventListener('click', () => {
