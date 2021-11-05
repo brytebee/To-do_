@@ -6,7 +6,7 @@ const updateIndex = (list) => {
       <button class="addBtn child-flex-small bg-success"><i class="fas fa-level-down-alt fa-rotate-90"></i></button>
     </span>
     <div id="root"></div>`;
-    
+
     list = [];
     class Item {
       constructor(description, list) {
@@ -15,7 +15,7 @@ const updateIndex = (list) => {
         this.index = list.length + 1;
       }
     }
-  ​
+
     const input = new Item('one', list);
     list.push(input.index);
     const input2 = new Item('two', list);
@@ -25,5 +25,5 @@ const updateIndex = (list) => {
     list.push(input3.index);
     return list;
   };
-  ​
+
   export default updateIndex;

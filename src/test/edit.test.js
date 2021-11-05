@@ -1,13 +1,13 @@
 /**
  * @jest-environment jsdom
  */
- ​
- import updateIndex from '../updateIndex.js';
-​
-jest.mock('../updateIndex');
-​
-describe('Index update function', () => {
-  test('Update the index of list when one item is deleted', () => {
-    expect(updateIndex()).toEqual([1, 2]);
-  });
+
+import editItem from '../edit.js';
+
+jest.mock('../edit');
+
+describe('Edit function', () => {
+   test('Edit a list item', () => {
+     expect(editItem()).toBe('some state...');
+   });
 });

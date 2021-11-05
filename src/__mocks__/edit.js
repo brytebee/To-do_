@@ -6,7 +6,7 @@ const editItem = (list, task, textHolder) => {
     <button class="addBtn child-flex-small bg-success"><i class="fas fa-level-down-alt fa-rotate-90"></i></button>
   </span>
   <div id="root"></div>`;
-​
+
   textHolder = document.querySelector('.addList');
   textHolder.value = 'some statement';
   task = document.createElement('div');
@@ -16,5 +16,5 @@ const editItem = (list, task, textHolder) => {
   textHolder.value = 'some state...';
   return textHolder.value;
 };
-​
+
 export default editItem;
